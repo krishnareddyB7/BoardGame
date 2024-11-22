@@ -18,6 +18,8 @@
 		<java.version>11</java.version>
 		<jacoco.version>0.8.7</jacoco.version>
 		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+		<sonar.host.url>http://13.235.87.168:9000/</sonar.host.url>
+		<sonar.login>squ_c35fbae99bb4288da15b0cdcea529d7514c53616</sonar.login>
 		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
 		<sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
 		<sonar.language>java</sonar.language>
@@ -117,12 +119,12 @@
 
 	<distributionManagement>
 		<repository>
-			<id>maven-releases</id>
-			<url>http://13.126.172.79:8081/repository/maven-releases/</url>
+			<id>nexusRepo</id>
+			<url>http://13.235.87.168:8081/repository/kubernets-release/</url>
 		</repository>
 		<snapshotRepository>
-			<id>maven-snapshots</id>
-			<url>http://13.126.172.79:8081/repository/maven-snapshots/</url>
+			<id>nexusRepo</id>
+			<url>http://13.235.87.168:8081/repository/kubernets-snap/</url>
 		</snapshotRepository>
 	</distributionManagement>
 </project>
